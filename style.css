@@ -398,7 +398,6 @@ footer {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
-<<<<<<< HEAD
 .btn-resume {
   background: #22c55e;
   color: white;
@@ -412,8 +411,4 @@ footer {
 .btn-resume:hover {
   transform: scale(1.05);
   box-shadow: 0 0 10px rgba(34, 197, 94, 0.6);
-=======
-.hero h1{
-text-shadow:0 0 10px rgba(34,197,94,0.6);
->>>>>>> 09d5c0428376f4e5504751899233762bc4ade6d0
 }
