@@ -1,0 +1,36 @@
+console.log("Script loaded");
+
+fetch("https://api.github.com/users/Shiva202-27/repos")
+  .then((res) => res.json())
+  .then((data) => {
+    console.log(data);
+
+    const repoList = document.getElementById("repo-list");
+
+    data
+      .sort((a, b) => b.stargazers_count - a.stargazers_count)
+      .slice(0, 6)
+      .forEach((repo) => {
+        const div = document.createElement("div");
+
+        div.innerHTML =
+          "<h3>" +
+          repo.name +
+          "</h3>" +
+          "<p>" +
+          (repo.description || "DevOps Project Repository") +
+          "</p>" +
+          "<p>⭐ " +
+          repo.stargazers_count +
+          " | 🍴 " +
+          repo.forks_count +
+          " | 🧠 " +
+          (repo.language || "Code") +
+          "</p>" +
+          "<a href='" +
+          repo.html_url +
+          "' target='_blank'>View Repo</a>";
+
+        repoList.appendChild(div);
+      });
+  });
