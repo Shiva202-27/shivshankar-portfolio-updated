@@ -47,3 +47,48 @@ fetch("https://api.github.com/users/Shiva202-27/repos")
         repoList.appendChild(div);
       });
   });
+/* SCROLL ANIMATIONS */
+
+ScrollReveal().reveal(".hero-content", { delay: 200 });
+
+ScrollReveal().reveal(".card", { interval: 200 });
+
+ScrollReveal().reveal(".project", { interval: 200 });
+
+ScrollReveal().reveal(".pipeline-step", { interval: 150 });
+/* TERMINAL TYPING ANIMATION */
+
+/* TERMINAL TYPING ANIMATION */
+
+const commands = [
+  "$ docker build -t billing-app .",
+  "$ kubectl apply -f deployment.yaml",
+  "$ terraform apply",
+  "$ docker push billing-app",
+  "$ kubectl get pods",
+];
+
+let commandIndex = 0;
+let charIndex = 0;
+
+function typeEffect() {
+  const element = document.getElementById("typing");
+  if (!element) return;
+
+  if (charIndex < commands[commandIndex].length) {
+    element.innerHTML += commands[commandIndex].charAt(charIndex);
+    charIndex++;
+
+    setTimeout(typeEffect, 50);
+  } else {
+    setTimeout(() => {
+      element.innerHTML = "";
+      charIndex = 0;
+      commandIndex = (commandIndex + 1) % commands.length;
+
+      typeEffect();
+    }, 1500);
+  }
+}
+
+typeEffect();
