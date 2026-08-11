@@ -1,209 +1,1191 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
 
-    <title>Shivshankar Kasapnor | DevOps Engineer</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
 
-    <link rel="stylesheet" href="style.css" />
+  <meta
+    name="description"
+    content="Shivshankar Kasapnor - Cloud & DevOps Engineer specializing in AWS, Kubernetes, Docker, Terraform and CI/CD."
+  />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-    />
-    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <meta
+    name="keywords"
+    content="Shivshankar Kasapnor, DevOps Engineer, AWS, Kubernetes, Docker, Terraform, Jenkins, Cloud Engineer"
+  />
 
-  <body>
-    <header>
-      <nav class="navbar">
-        <h2 class="logo">shivshankar.tech</h2>
+  <meta name="author" content="Shivshankar Kasapnor" />
 
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#github">GitHub</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+  <title>Shivshankar Kasapnor | Cloud & DevOps Engineer</title>
 
-    <section class="hero">
-      <div id="particles-js"></div>
+  <!-- Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
 
-      <div class="hero-content">
-        <h1>Shivshankar Kasapnor</h1>
+  <!-- Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
 
-        <h3>DevOps Engineer | AWS | Docker | Kubernetes | CI/CD</h3>
+  <!-- ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
 
-        <p>
-          Building scalable cloud infrastructure and automating deployments
-          using modern DevOps tools and practices.
-        </p>
+  <!-- Particles -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
-        <div class="hero-buttons">
-          <a class="btn" href="#projects">View Projects</a>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-          <a
-            class="btn-outline"
-            href="https://github.com/Shiva202-27"
-            target="_blank"
-            >GitHub</a
-          >
+<body>
 
-         <a class="btn-resume" href="Shivshankar_Kasapnor_Cloud_Engineer_Resume.pdf" download>
-    Download Cloud Resume
-</a>
-           <a class="btn-resume" href="Shivshankar_Kasapnor_DevOps_Engineer_Resume.pdf" download
-            >Download Devops Resume</a>
-          
-        </div>
-        <div class="terminal">
-          <div class="terminal-header">
-            <span class="red"></span>
-            <span class="yellow"></span>
-            <span class="green"></span>
-          </div>
+  <!-- =========================
+       PAGE LOADER
+  ========================== -->
 
-          <div class="terminal-body">
-            <p id="typing"></p>
-          </div>
-        </div>
+  <div id="loader">
+
+    <div class="loader-content">
+
+      <div class="loader-logo">
+        <span>&lt;</span>N<span>/&gt;</span>
       </div>
-    </section>
 
-    <div class="cube-container">
-      <div class="cube">
-        <div class="face front">Docker</div>
-
-        <div class="face back">K8s</div>
-
-        <div class="face left">AWS</div>
-
-        <div class="face right">Terraform</div>
-
-        <div class="face top">Linux</div>
-
-        <div class="face bottom">Jenkins</div>
+      <div class="loader-terminal">
+        <span id="loader-text"></span>
+        <span class="cursor">_</span>
       </div>
+
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+
+      <p>Initializing DevOps environment...</p>
+
     </div>
 
-    <section id="about">
-      <h2>About Me</h2>
+  </div>
+
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <header class="navbar">
+
+    <a href="#home" class="logo">
+      <span class="logo-symbol">&lt;/&gt;</span>
+      <span>Nimbus<span>Ops</span></span>
+    </a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      aria-label="Open navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <nav id="nav-menu">
+
+      <ul>
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#github">GitHub</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+  </header>
+
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section id="home" class="hero">
+
+    <div id="particles-js"></div>
+
+    <div class="hero-grid"></div>
+
+    <div class="hero-glow glow-one"></div>
+    <div class="hero-glow glow-two"></div>
+
+    <div class="hero-container">
+
+      <div class="hero-left reveal-left">
+
+        <div class="status-badge">
+
+          <span class="status-dot"></span>
+
+          Available for Cloud & DevOps opportunities
+
+        </div>
+
+        <p class="hero-small">
+          HELLO, I'M
+        </p>
+
+        <h1>
+          Shivshankar
+          <span>Kasapnor</span>
+        </h1>
+
+        <h2>
+          Cloud & DevOps Engineer
+        </h2>
+
+        <p class="hero-description">
+
+          Building reliable cloud infrastructure,
+          containerized applications and automated
+          CI/CD pipelines using modern DevOps practices.
+
+        </p>
+
+        <div class="hero-tech">
+
+          <span>
+            <i class="fab fa-aws"></i>
+            AWS
+          </span>
+
+          <span>
+            <i class="fab fa-docker"></i>
+            Docker
+          </span>
+
+          <span>
+            <i class="fas fa-dharmachakra"></i>
+            Kubernetes
+          </span>
+
+          <span>
+            <i class="fas fa-code-branch"></i>
+            CI/CD
+          </span>
+
+        </div>
+
+        <div class="hero-buttons">
+
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-rocket"></i>
+            View Projects
+          </a>
+
+          <a
+            href="https://github.com/Shiva202-27"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-outline"
+          >
+            <i class="fab fa-github"></i>
+            GitHub
+          </a>
+
+          <a
+            href="Shivshankar_Kasapnor_Cloud_Engineer_Resume.pdf"
+            download
+            class="btn btn-resume"
+          >
+            <i class="fas fa-file-arrow-down"></i>
+            Resume
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Terminal -->
+
+      <div class="hero-right reveal-right">
+
+        <div class="terminal-window">
+
+          <div class="terminal-top">
+
+            <div class="terminal-dots">
+
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+
+            </div>
+
+            <span class="terminal-title">
+              shivshankar@devops:~
+            </span>
+
+          </div>
+
+          <div class="terminal-content">
+
+            <div class="terminal-line">
+              <span class="terminal-green">
+                shivshankar@devops
+              </span>
+              <span>:</span>
+              <span class="terminal-blue">~</span>
+              <span>$</span>
+            </div>
+
+            <p id="typing"></p>
+
+            <div class="terminal-output">
+
+              <p>
+                <span class="success">✓</span>
+                Infrastructure ready
+              </p>
+
+              <p>
+                <span class="success">✓</span>
+                Kubernetes cluster connected
+              </p>
+
+              <p>
+                <span class="success">✓</span>
+                CI/CD pipeline active
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Floating cards -->
+
+        <div class="floating-card card-one">
+
+          <i class="fab fa-aws"></i>
+
+          <div>
+            <strong>AWS</strong>
+            <small>Cloud</small>
+          </div>
+
+        </div>
+
+
+        <div class="floating-card card-two">
+
+          <i class="fas fa-dharmachakra"></i>
+
+          <div>
+            <strong>Kubernetes</strong>
+            <small>Orchestration</small>
+          </div>
+
+        </div>
+
+
+        <div class="floating-card card-three">
+
+          <i class="fas fa-infinity"></i>
+
+          <div>
+            <strong>CI/CD</strong>
+            <small>Automation</small>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <a href="#about" class="scroll-indicator">
+
+      <span>Scroll to explore</span>
+
+      <i class="fas fa-chevron-down"></i>
+
+    </a>
+
+  </section>
+
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section id="about" class="section">
+
+    <div class="section-header reveal">
+
+      <span class="section-number">01</span>
+
+      <div>
+        <p class="section-label">ABOUT ME</p>
+        <h2>Building with <span>automation</span></h2>
+      </div>
+
+    </div>
+
+
+    <div class="about-grid">
+
+      <div class="about-text reveal-left">
+
+        <p class="lead">
+
+          I'm a Cloud & DevOps Engineer focused on building
+          reliable infrastructure, automating deployments
+          and managing containerized workloads.
+
+        </p>
+
+        <p>
+
+          I work with AWS, Docker, Kubernetes, Terraform,
+          Jenkins, GitHub Actions, Linux, Prometheus and Grafana.
+          My focus is on creating repeatable deployment workflows,
+          scalable infrastructure and observable applications.
+
+        </p>
+
+        <p>
+
+          I enjoy solving infrastructure problems and turning
+          manual operational processes into automated workflows.
+
+        </p>
+
+
+        <div class="about-stats">
+
+          <div class="stat">
+            <strong>15+</strong>
+            <span>DevOps Tools</span>
+          </div>
+
+          <div class="stat">
+            <strong>10+</strong>
+            <span>Projects</span>
+          </div>
+
+          <div class="stat">
+            <strong>2025</strong>
+            <span>Engineering Graduate</span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="about-terminal reveal-right">
+
+        <div class="code-card">
+
+          <div class="code-header">
+
+            <span>
+              <i class="fas fa-terminal"></i>
+              devops.sh
+            </span>
+
+            <span>
+              bash
+            </span>
+
+          </div>
+
+          <pre><code><span class="code-comment"># My DevOps workflow</span>
+
+<span class="code-keyword">git</span> push origin main
+
+<span class="code-keyword">jenkins</span> build
+
+<span class="code-keyword">docker</span> build
+
+<span class="code-keyword">docker</span> push
+
+<span class="code-keyword">kubectl</span> apply -f deployment.yaml
+
+<span class="code-keyword">prometheus</span> monitor
+
+<span class="code-keyword">grafana</span> visualize
+
+<span class="code-success">✓ deployment successful</span></code></pre>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       SKILLS
+  ========================== -->
+
+  <section id="skills" class="section section-dark">
+
+    <div class="section-header reveal">
+
+      <span class="section-number">02</span>
+
+      <div>
+        <p class="section-label">TECHNOLOGIES</p>
+        <h2>My <span>DevOps stack</span></h2>
+      </div>
+
+    </div>
+
+
+    <div class="skills-grid">
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon aws">
+          <i class="fab fa-aws"></i>
+        </div>
+
+        <h3>AWS</h3>
+
+        <p>
+          EC2 · S3 · IAM · VPC · RDS · CloudWatch · Lambda
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 85%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon docker">
+          <i class="fab fa-docker"></i>
+        </div>
+
+        <h3>Docker</h3>
+
+        <p>
+          Containers · Images · Dockerfiles · Registry
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 90%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon kubernetes">
+          <i class="fas fa-dharmachakra"></i>
+        </div>
+
+        <h3>Kubernetes</h3>
+
+        <p>
+          Deployments · Services · RBAC · HPA · Storage
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 90%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon terraform">
+          <i class="fas fa-cubes"></i>
+        </div>
+
+        <h3>Terraform</h3>
+
+        <p>
+          IaC · VPC · EC2 · Security Groups · AWS
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 80%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon jenkins">
+          <i class="fas fa-gears"></i>
+        </div>
+
+        <h3>Jenkins</h3>
+
+        <p>
+          CI/CD · Pipelines · Webhooks · Automation
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 85%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon linux">
+          <i class="fab fa-linux"></i>
+        </div>
+
+        <h3>Linux</h3>
+
+        <p>
+          Shell · Networking · Processes · System Administration
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 85%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon monitoring">
+          <i class="fas fa-chart-line"></i>
+        </div>
+
+        <h3>Monitoring</h3>
+
+        <p>
+          Prometheus · Grafana · CloudWatch · Metrics
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 80%"></span>
+        </div>
+
+      </div>
+
+
+      <div class="skill-card reveal">
+
+        <div class="skill-icon git">
+          <i class="fab fa-github"></i>
+        </div>
+
+        <h3>Git & GitHub</h3>
+
+        <p>
+          Git · Branching · GitHub Actions · Collaboration
+        </p>
+
+        <div class="skill-level">
+          <span style="width: 90%"></span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       FEATURED PROJECT
+  ========================== -->
+
+  <section id="projects" class="section">
+
+    <div class="section-header reveal">
+
+      <span class="section-number">03</span>
+
+      <div>
+        <p class="section-label">FEATURED WORK</p>
+        <h2>Projects I've <span>built</span></h2>
+      </div>
+
+    </div>
+
+
+    <!-- NimbusOps -->
+
+    <article class="featured-project reveal">
+
+      <div class="project-glow"></div>
+
+      <div class="featured-content">
+
+        <div class="project-top">
+
+          <span class="project-label">
+            ⭐ FEATURED PROJECT
+          </span>
+
+          <span class="project-status">
+            <span></span>
+            Completed
+          </span>
+
+        </div>
+
+        <h3>NimbusOps</h3>
+
+        <h4>
+          Kubernetes Management & Observability Platform
+        </h4>
+
+        <p>
+
+          A full-stack Kubernetes management platform built
+          with React, TypeScript and Spring Boot. NimbusOps
+          provides centralized workload management, monitoring,
+          RBAC, logs, terminal access, deployment lifecycle
+          operations and AI-assisted Kubernetes capabilities.
+
+        </p>
+
+
+        <div class="project-tags">
+
+          <span>React</span>
+          <span>TypeScript</span>
+          <span>Spring Boot</span>
+          <span>Java 21</span>
+          <span>Kubernetes</span>
+          <span>Docker</span>
+          <span>PostgreSQL</span>
+          <span>Prometheus</span>
+          <span>Grafana</span>
+          <span>JWT</span>
+
+        </div>
+
+
+        <div class="project-buttons">
+
+          <a
+            href="https://github.com/Shiva202-27/NimbusopsApiApplication"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            <i class="fab fa-github"></i>
+            View Project
+          </a>
+
+          <a
+            href="https://github.com/Shiva202-27/NimbusopsApiApplication"
+            target="_blank"
+            rel="noopener"
+            class="text-link"
+          >
+            View Documentation
+            <i class="fas fa-arrow-right"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div class="project-visual">
+
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="k8s-logo">
+
+          <i class="fas fa-dharmachakra"></i>
+
+          <span>NimbusOps</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- Other projects -->
+
+    <div class="projects-grid">
+
+
+      <article class="project-card reveal">
+
+        <div class="project-icon">
+          <i class="fas fa-file-invoice-dollar"></i>
+        </div>
+
+        <span class="project-category">
+          APPLICATION
+        </span>
+
+        <h3>Laxmi Traders Billing App</h3>
+
+        <p>
+
+          Offline billing and shop management application
+          with automated deployment and containerization.
+
+        </p>
+
+        <div class="project-tags">
+
+          <span>Java</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+          <span>Jenkins</span>
+
+        </div>
+
+      </article>
+
+
+      <article class="project-card reveal">
+
+        <div class="project-icon">
+          <i class="fas fa-code-branch"></i>
+        </div>
+
+        <span class="project-category">
+          CI/CD
+        </span>
+
+        <h3>CI/CD Pipeline Automation</h3>
+
+        <p>
+
+          Automated application build, Docker image creation
+          and deployment using Jenkins and GitHub.
+
+        </p>
+
+        <div class="project-tags">
+
+          <span>Jenkins</span>
+          <span>GitHub</span>
+          <span>Docker</span>
+          <span>Linux</span>
+
+        </div>
+
+      </article>
+
+
+      <article class="project-card reveal">
+
+        <div class="project-icon">
+          <i class="fas fa-cloud"></i>
+        </div>
+
+        <span class="project-category">
+          INFRASTRUCTURE
+        </span>
+
+        <h3>Terraform AWS Infrastructure</h3>
+
+        <p>
+
+          Infrastructure-as-Code project provisioning AWS
+          networking, EC2, security groups and related resources.
+
+        </p>
+
+        <div class="project-tags">
+
+          <span>Terraform</span>
+          <span>AWS</span>
+          <span>EC2</span>
+          <span>VPC</span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       PIPELINE
+  ========================== -->
+
+  <section id="pipeline" class="section section-dark">
+
+    <div class="section-header reveal">
+
+      <span class="section-number">04</span>
+
+      <div>
+        <p class="section-label">AUTOMATION</p>
+        <h2>My DevOps <span>pipeline</span></h2>
+      </div>
+
+    </div>
+
+
+    <div class="pipeline-container reveal">
+
+      <div class="pipeline-line"></div>
+
+
+      <div class="pipeline-node">
+
+        <div class="node-icon">
+          <i class="fab fa-github"></i>
+        </div>
+
+        <strong>GitHub</strong>
+
+        <small>Source Code</small>
+
+      </div>
+
+
+      <div class="pipeline-arrow">
+        →
+      </div>
+
+
+      <div class="pipeline-node">
+
+        <div class="node-icon">
+          <i class="fas fa-gears"></i>
+        </div>
+
+        <strong>Jenkins</strong>
+
+        <small>Build & Test</small>
+
+      </div>
+
+
+      <div class="pipeline-arrow">
+        →
+      </div>
+
+
+      <div class="pipeline-node">
+
+        <div class="node-icon">
+          <i class="fab fa-docker"></i>
+        </div>
+
+        <strong>Docker</strong>
+
+        <small>Containerize</small>
+
+      </div>
+
+
+      <div class="pipeline-arrow">
+        →
+      </div>
+
+
+      <div class="pipeline-node">
+
+        <div class="node-icon">
+          <i class="fas fa-dharmachakra"></i>
+        </div>
+
+        <strong>Kubernetes</strong>
+
+        <small>Deploy</small>
+
+      </div>
+
+
+      <div class="pipeline-arrow">
+        →
+      </div>
+
+
+      <div class="pipeline-node">
+
+        <div class="node-icon">
+          <i class="fab fa-aws"></i>
+        </div>
+
+        <strong>AWS</strong>
+
+        <small>Cloud</small>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       GITHUB
+  ========================== -->
+
+  <section id="github" class="section">
+
+    <div class="section-header reveal">
+
+      <span class="section-number">05</span>
+
+      <div>
+        <p class="section-label">OPEN SOURCE</p>
+        <h2>GitHub <span>repositories</span></h2>
+      </div>
+
+    </div>
+
+
+    <div class="github-profile reveal">
+
+      <div class="github-avatar">
+        <i class="fab fa-github"></i>
+      </div>
+
+      <div>
+
+        <h3>Shivshankar Kasapnor</h3>
+
+        <p>
+          Cloud & DevOps projects, Kubernetes experiments
+          and automation workflows.
+        </p>
+
+      </div>
+
+      <a
+        href="https://github.com/Shiva202-27"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-outline"
+      >
+        Visit GitHub
+        <i class="fas fa-arrow-up-right-from-square"></i>
+      </a>
+
+    </div>
+
+
+    <div id="repo-list" class="repo-grid">
+
+      <div class="repo-loading">
+        <i class="fas fa-spinner fa-spin"></i>
+        Loading repositories...
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section id="contact" class="section contact-section">
+
+    <div class="contact-glow"></div>
+
+    <div class="contact-content reveal">
+
+      <p class="section-label">
+        06 — CONTACT
+      </p>
+
+      <h2>
+        Let's build something
+        <span>reliable.</span>
+      </h2>
 
       <p>
-        DevOps engineer with hands-on experience in Linux, AWS cloud, Docker
-        containerization and Kubernetes orchestration. Experienced in automating
-        deployments using Jenkins and building infrastructure using Terraform.
+
+        I'm currently open to Cloud, DevOps and infrastructure
+        opportunities. Feel free to reach out.
+
       </p>
-    </section>
 
-    <section id="skills">
-      <h2>DevOps Skills</h2>
 
-      <div class="skills-grid">
-        <div class="card">AWS</div>
-        <div class="card">Docker</div>
-        <div class="card">Kubernetes</div>
-        <div class="card">Terraform</div>
-        <div class="card">Jenkins</div>
-        <div class="card">GitHub</div>
-        <div class="card">Linux</div>
-        <div class="card">Prometheus</div>
-        <div class="card">Grafana</div>
+      <div class="contact-links">
+
+        <a
+          href="mailto:shivk202vapm@gmail.com"
+          class="contact-item"
+        >
+
+          <i class="fas fa-envelope"></i>
+
+          <div>
+            <small>Email</small>
+            <strong>shivk202vapm@gmail.com</strong>
+          </div>
+
+        </a>
+
+
+        <a
+          href="tel:+919503127404"
+          class="contact-item"
+        >
+
+          <i class="fas fa-phone"></i>
+
+          <div>
+            <small>Phone</small>
+            <strong>+91 95031 27404</strong>
+          </div>
+
+        </a>
+
+
+        <a
+          href="https://github.com/Shiva202-27"
+          target="_blank"
+          rel="noopener"
+          class="contact-item"
+        >
+
+          <i class="fab fa-github"></i>
+
+          <div>
+            <small>GitHub</small>
+            <strong>Shiva202-27</strong>
+          </div>
+
+        </a>
+
       </div>
-    </section>
 
-    <section id="projects">
-      <h2>DevOps Projects</h2>
 
-      <div class="projects">
-        <div class="project">
-          <h3>Laxmi Traders Billing App Deployment</h3>
+      <div class="contact-buttons">
 
-          <p>
-            Containerized billing application using Docker and deployed on
-            Kubernetes cluster with Jenkins CI/CD pipeline.
-          </p>
-        </div>
+        <a
+          href="mailto:shivk202vapm@gmail.com"
+          class="btn btn-primary"
+        >
+          <i class="fas fa-paper-plane"></i>
+          Get In Touch
+        </a>
 
-        <div class="project">
-          <h3>CI/CD Pipeline Automation</h3>
+        <a
+          href="Shivshankar_Kasapnor_Cloud_Engineer_Resume.pdf"
+          download
+          class="btn btn-outline"
+        >
+          <i class="fas fa-download"></i>
+          Download Resume
+        </a>
 
-          <p>
-            Implemented automated CI/CD pipeline using GitHub webhook, Jenkins
-            pipeline and Docker image deployment.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>Terraform AWS Infrastructure</h3>
-
-          <p>
-            Provisioned AWS infrastructure using Terraform including EC2, VPC,
-            security groups and IAM roles.
-          </p>
-        </div>
       </div>
-    </section>
-    <section id="pipeline">
-      <h2>DevOps Pipeline</h2>
 
-      <div class="pipeline">
-        <div class="pipeline-step">GitHub</div>
+    </div>
 
-        <div class="arrow">→</div>
+  </section>
 
-        <div class="pipeline-step">Jenkins</div>
 
-        <div class="arrow">→</div>
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-        <div class="pipeline-step">Docker</div>
+  <footer>
 
-        <div class="arrow">→</div>
+    <div class="footer-content">
 
-        <div class="pipeline-step">Kubernetes</div>
-
-        <div class="arrow">→</div>
-
-        <div class="pipeline-step">AWS</div>
+      <div class="footer-logo">
+        &lt;/&gt; Shivshankar
       </div>
-    </section>
-
-    <section id="github">
-      <h2>GitHub Repositories</h2>
-
-      <div id="repo-list"></div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-
-      <p>Email: shivk202vapm@gmail.com</p>
-
-      <p>Phone: 9503127404</p>
 
       <p>
-        <a href="https://github.com/Shiva202-27">GitHub Profile</a>
+        Building infrastructure. Automating everything.
       </p>
-    </section>
 
-    <footer>
-      <p>© 2026 Shivshankar Kasapnor | DevOps Engineer</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-    <script src="script.js" defer></script>
-  </body>
+      <div class="footer-social">
+
+        <a
+          href="https://github.com/Shiva202-27"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+
+        <a
+          href="mailto:shivk202vapm@gmail.com"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Shivshankar Kasapnor
+      </p>
+
+      <p>
+        Cloud & DevOps Engineer
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- Back to top -->
+
+  <button
+    id="back-to-top"
+    aria-label="Back to top"
+  >
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+
+  <script src="script.js"></script>
+
+</body>
 </html>
